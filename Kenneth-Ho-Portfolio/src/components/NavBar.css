@@ -1,0 +1,103 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightslategray;
+  color: #fff;
+  padding: 1.5rem;
+  margin: 10px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.leftLogo .logoLink {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: cursive;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.leftLogo .logoLink::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.leftLogo .logoLink:hover::after {
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbarRight {
+  display: flex;
+  justify-content: flex-end;
+
+  flex-grow: 1;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  font-size: x-large;
+}
+
+.navLinks li {
+  margin-right: 1rem;
+}
+
+.navLinks a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.spinnerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.spinnerContainer p {
+  margin-top: 3rem;
+  color: #ffffff;
+  font-size: 4rem;
+}

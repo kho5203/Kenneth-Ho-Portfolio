@@ -1,0 +1,177 @@
+.main {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+#enjoy {
+  text-align: center;
+  font-size: 75px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.down-arrow {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite ease-in-out;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.boxOne {
+  border: 1px solid red;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  margin: 5px;
+}
+
+.boxOneLeft {
+  border: 1px solid indigo;
+  padding: 10px;
+  margin-right: 10px;
+  width: 50%;
+}
+
+.boxOneRight {
+  border: 1px solid indigo;
+  padding: 10px;
+  margin-left: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.basketballButton {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.basketballButton:hover {
+  transform: scale(1.2);
+}
+
+.boxOneRight img {
+  width: 60%;
+  height: 100%;
+  border-radius: 100px;
+  border: 2px solid black;
+}
+
+.boxTwo {
+  border: 1px solid red;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  margin: 5px;
+}
+
+.boxTwoLeft {
+  border: 1px solid indigo;
+  padding: 10px;
+  margin-right: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.drawingButton {
+  width: 180px;
+  height: 60px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: plum;
+  border-radius: 5px;
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+.drawingButton svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: white;
+  stroke-width: 3;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.drawingButton span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  z-index: 1;
+}
+
+.drawingButton:hover {
+  background: darkmagenta;
+}
+
+.drawingButton:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.drawingButton:hover span {
+  color: white;
+}
+
+.boxTwoLeft img {
+  width: 60%;
+  height: 100%;
+  border-radius: 100px;
+  border: 2px solid black;
+}
+
+.boxTwoRight {
+  border: 1px solid indigo;
+  padding: 10px;
+  margin-left: 10px;
+  width: 50%;
+}

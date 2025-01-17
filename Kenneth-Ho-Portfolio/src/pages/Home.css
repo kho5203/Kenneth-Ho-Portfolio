@@ -3,7 +3,6 @@
   height: 100vh;
   padding: 20px;
   gap: 20px;
-  /* border: 1px solid black; */
 }
 
 .leftSection {
@@ -13,9 +12,27 @@
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leftSection h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.leftSection h4 {
+  margin-bottom: 15px;
+  font-size: 1.75rem;
+  color: #555;
+}
+
+.leftSection p {
+  font-size: 1.2rem;
+  color: #777;
 }
 
 .rightSection {
@@ -23,9 +40,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: whitesmoke; */
-  /* border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .rightSection img {

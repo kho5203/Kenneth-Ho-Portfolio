@@ -1,6 +1,8 @@
 import "./Hobbies.css";
 import basketball from "./HobbiesBasketball.gif";
 import drawing from "./HobbiesDrawing.gif";
+import cooking from "./HobbiesCooking.gif";
+import muayThai from "./HobbiesMuayThai.gif";
 
 function Hobbies() {
   return (
@@ -10,7 +12,18 @@ function Hobbies() {
       <div className="main">
         <div className="boxOne">
           <div className="boxOneLeft">
-            <p> Box 1 Left</p>
+            <button
+              className="cookingButton"
+              onClick={() =>
+                window.open(
+                  "https://www.recipetineats.com/vietnamese-pho-recipe/",
+                  "_blank"
+                )
+              }
+            >
+              Cooking
+            </button>
+            <img src={cooking} alt="cooking" />
           </div>
           <div className="boxOneRight">
             <button
@@ -55,7 +68,18 @@ function Hobbies() {
             <img src={drawing} alt="drawing" />
           </div>
           <div className="boxTwoRight">
-            <p>Box 2 Right</p>
+            <button
+              className="muayThaiButton"
+              onClick={() =>
+                window.open(
+                  "https://evolve-mma.com/blog/the-complete-muay-thai-beginners-guide/",
+                  "_blank"
+                )
+              }
+            >
+              Muay Thai
+            </button>
+            <img src={muayThai} alt="muayThai" />
           </div>
         </div>
       </div>

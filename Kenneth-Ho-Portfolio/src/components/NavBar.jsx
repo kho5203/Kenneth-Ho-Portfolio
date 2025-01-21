@@ -14,10 +14,10 @@ function NavBar() {
         <div className="navbarRight">
           <ul className="navLinks">
             <li>
-              <Link to="/Hobbies">Personal</Link>
+              <Link to="/Hobbies">Personal Life</Link>
             </li>
             <li>
-              <Link to="/Experience">Experience</Link>
+              <Link to="/Experience">Career Experience</Link>
             </li>
             <li>
               <Link to="/Contacts">Contacts</Link>

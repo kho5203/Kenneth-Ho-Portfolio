@@ -1,5 +1,5 @@
 .main {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   padding: 10px;
   margin-top: 40px;
@@ -28,13 +28,13 @@
   content: " ";
   position: absolute;
   top: 12px;
-  left: -10px;
+  left: -8.5px;
   width: 16px;
   height: 16px;
   border-bottom: 4px solid;
   border-right: 4px solid;
   border-radius: 4px;
-  transform: rotateZ(45deg);
+  transform: rotateZ(45deg) translateX(0.5px);
 }
 
 @keyframes jumpInfinite {
@@ -48,29 +48,128 @@
 }
 
 .boxOne {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   padding: 10px;
   width: 100%;
   margin: 5px;
 }
 
-.boxOneLeft {
-  border: 1px solid indigo;
+.boxTwo {
+  /* border: 1px solid red; */
+  display: flex;
   padding: 10px;
-  margin-right: 10px;
-  width: 50%;
+  width: 100%;
+  margin: 5px;
 }
 
-.boxOneRight {
-  border: 1px solid indigo;
+.boxOneLeft,
+.boxOneRight,
+.boxTwoLeft,
+.boxTwoRight {
   padding: 10px;
-  margin-left: 10px;
+  margin: 10px;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.boxOneLeft:hover,
+.boxOneRight:hover,
+.boxTwoLeft:hover,
+.boxTwoRight:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.boxOneLeft img,
+.boxOneRight img,
+.boxTwoLeft img,
+.boxTwoRight img {
+  width: 60%;
+  height: 90%;
+  border-radius: 100px;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.cookingButton {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+}
+
+.cookingButton:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cookingButton:hover:before {
+  opacity: 1;
+  animation: glowing-cookingButton 20s linear infinite;
+}
+
+@keyframes glowing-cookingButton {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.cookingButton:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 .basketballButton {
@@ -81,7 +180,7 @@
   border: 2px solid black;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -89,36 +188,10 @@
   transform: scale(1.2);
 }
 
-.boxOneRight img {
-  width: 60%;
-  height: 100%;
-  border-radius: 100px;
-  border: 2px solid black;
-}
-
-.boxTwo {
-  border: 1px solid red;
-  display: flex;
-  padding: 10px;
-  width: 100%;
-  margin: 5px;
-}
-
-.boxTwoLeft {
-  border: 1px solid indigo;
-  padding: 10px;
-  margin-right: 10px;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .drawingButton {
   width: 180px;
   height: 60px;
-  margin-bottom: 10px;
+  margin: 10px;
   cursor: pointer;
   background-color: plum;
   border-radius: 5px;
@@ -162,16 +235,70 @@
   color: white;
 }
 
-.boxTwoLeft img {
-  width: 60%;
-  height: 100%;
-  border-radius: 100px;
-  border: 2px solid black;
+.muayThaiButton {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
 }
 
-.boxTwoRight {
-  border: 1px solid indigo;
-  padding: 10px;
-  margin-left: 10px;
-  width: 50%;
+.muayThaiButton::after,
+.muayThaiButton::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.muayThaiButton::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: navy;
+  border-radius: 10px;
+}
+
+.muayThaiButton::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.muayThaiButton:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.muayThaiButton:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.muayThaiButton:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
 }

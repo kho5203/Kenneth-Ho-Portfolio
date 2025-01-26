@@ -82,6 +82,13 @@ function Contacts() {
     rus();
   }, []);
 
+  const copyEmail = () => {
+    const email = "kennethho664@gmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+      alert("Email Copied!");
+    });
+  };
+
   return (
     <div>
       <div className="orb">
@@ -100,6 +107,9 @@ function Contacts() {
                 alt="emailImage"
               />
             </a>
+            <button className="emailButton" onClick={copyEmail}>
+              Copy Email
+            </button>
           </div>
           <div className="linkedin">
             <a href="www.linkedin.com/in/kenneth-j-ho">

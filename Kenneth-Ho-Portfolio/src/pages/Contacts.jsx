@@ -112,7 +112,7 @@ function Contacts() {
             </button>
           </div>
           <div className="linkedin">
-            <a href="www.linkedin.com/in/kenneth-j-ho">
+            <a href="https://www.linkedin.com/in/kenneth-j-ho/" target="_blank">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
                 alt="linkedinImage"

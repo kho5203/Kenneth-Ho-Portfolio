@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import Hobbies from "./pages/Hobbies";
 import Experience from "./pages/Experience";
+import Resume from "./pages/Resume";
 import Contacts from "./pages/Contacts";
 import EntryAnimator from "./components/EntryAnimator";
 import "./App.css";
@@ -30,6 +31,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Hobbies" element={<Hobbies />} />
             <Route path="/Experience" element={<Experience />} />
+            <Route path="/Resume" element={<Resume />} />
             <Route path="/Contacts" element={<Contacts />} />
           </Routes>
         </div>

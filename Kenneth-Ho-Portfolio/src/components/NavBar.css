@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,10 +10,10 @@
   align-items: center;
 }
 
-.leftLogo .logoLink {
+.logoLink {
   font-size: 2rem;
   font-weight: bold;
-  font-family: cursive;
+  font-family: "Water Brush", serif;
   color: #fff;
   text-decoration: none;
   display: flex;
@@ -40,7 +41,6 @@
 .navbarRight {
   display: flex;
   justify-content: flex-end;
-
   flex-grow: 1;
 }
 

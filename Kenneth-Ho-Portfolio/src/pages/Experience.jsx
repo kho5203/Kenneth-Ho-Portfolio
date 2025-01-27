@@ -55,7 +55,7 @@ function Experience() {
         <div className="datafederalWhole">
           <div className="datafederalContainer">
             <img
-              src="https://datafederal.com/wp-content/uploads/2023/01/DF-Logo-small.png"
+              src="https://media.licdn.com/dms/image/v2/C4E0BAQEu9SUB7-qoFw/company-logo_200_200/company-logo_200_200/0/1631346986973?e=1746057600&v=beta&t=le6lgUaBc7WRpOr7_H1n5IG3JiRICFVEoQtBqUVHsw8"
               alt="datafederal"
             />
             <div className="datafederalText">

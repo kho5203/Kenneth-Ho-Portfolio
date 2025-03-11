@@ -9,7 +9,6 @@ import Resume from "./pages/Resume";
 import Contacts from "./pages/Contacts";
 import EntryAnimator from "./components/EntryAnimator";
 import "./App.css";
-
 function App() {
   const [entryAnimationFinished, setEntryAnimationFinished] = useState(false);
 

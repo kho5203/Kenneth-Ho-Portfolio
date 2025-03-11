@@ -8,8 +8,8 @@ function Home() {
         <h1> Welcome! I'm Kenneth!</h1>
         <h4>
           I'm currently a student at the University of Maryland studying
-          Information Science. I'm a beginner in web development and am
-          passionate about learning and growing in this field.
+          Information Science. I'm passionate about web development and am
+          eager to learn, grow, and expand my skills in this field.
         </h4>
         <p>Click through the tabs to learn more about me.</p>
       </div>

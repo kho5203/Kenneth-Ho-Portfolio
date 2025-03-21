@@ -1,4 +1,4 @@
-import resume from "./Resume_Kenneth.docx.pdf";
+import resume from "./Linkedin_Resume_Kenneth_Ho.docx.pdf";
 import "./Resume.css";
 
 function Resume() {

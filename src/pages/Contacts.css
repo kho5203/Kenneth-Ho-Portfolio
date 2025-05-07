@@ -83,3 +83,41 @@
 .emailButton:hover {
   background-color: green;
 }
+
+@media screen and (max-width: 768px) {
+  .orb canvas {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .contacts {
+    margin-right: 0;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .contacts h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .logos {
+    gap: 30px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  .email img,
+  .linkedin img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .emailButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

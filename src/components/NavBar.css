@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -36,6 +37,13 @@
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
 }
 
 .navbarRight {
@@ -102,4 +110,62 @@
   margin-top: 3rem;
   color: #ffffff;
   font-size: 4rem;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+    margin: 5px;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbarRight {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: lightslategray;
+    border-radius: 0 0 20px 20px;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .navbarRight.active {
+    display: block;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+  }
+
+  .navLinks li {
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navLinks a {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  .logoLink {
+    font-size: 1.5rem;
+  }
+
+  .spinnerContainer p {
+    font-size: 2rem;
+  }
 }

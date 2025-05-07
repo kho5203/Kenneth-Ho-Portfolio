@@ -163,3 +163,73 @@
 .toolIcons img:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 768px) {
+  .sectionHeader h1 {
+    font-size: 35px;
+  }
+
+  .cisaContainer,
+  .DAContainer,
+  .datafederalContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cisaText h1,
+  .DAText h1,
+  .datafederalText h1 {
+    font-size: large;
+  }
+
+  .cisaText h3,
+  .DAText h3,
+  .datafederalText h3 {
+    font-size: medium;
+  }
+
+  .cisaText h5,
+  .DAText h5,
+  .datafederalText h5 {
+    font-size: small;
+  }
+
+  .cisaContainer img,
+  .DAContainer img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .datafederalContainer img {
+    height: 75px;
+    width: 150px;
+  }
+
+  .cisaResume p,
+  .DAResume p,
+  .datafederalResume p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .tools {
+    width: 90%;
+    padding: 20px 10px;
+    border-radius: 20px;
+  }
+
+  .tools h1 {
+    font-size: x-large;
+  }
+
+  .toolIcons {
+    width: 90%;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .toolIcons img {
+    height: 50px;
+    width: 50px;
+  }
+}

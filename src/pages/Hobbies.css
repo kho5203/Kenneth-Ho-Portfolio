@@ -302,3 +302,75 @@
   transition: 0s;
   transform: translate(0, 5%);
 }
+
+@media screen and (max-width: 768px) {
+  #enjoy {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  .main {
+    margin-top: 20px;
+  }
+
+  .boxOne,
+  .boxTwo {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .boxOneLeft,
+  .boxOneRight,
+  .boxTwoLeft,
+  .boxTwoRight {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 25px;
+  }
+
+  .boxOneLeft img,
+  .boxOneRight img,
+  .boxTwoLeft img,
+  .boxTwoRight img {
+    width: 80%;
+    height: auto;
+    border-radius: 50px;
+  }
+
+  /* Button adjustments for mobile */
+  .cookingButton,
+  .basketballButton,
+  .drawingButton,
+  .muayThaiButton {
+    transform: scale(0.9);
+    margin: 5px;
+  }
+
+  .drawingButton {
+    width: 150px;
+    height: 50px;
+  }
+
+  .drawingButton svg {
+    width: 150px;
+    height: 50px;
+  }
+
+  .down-arrow {
+    height: 20px;
+    margin-bottom: 10px;
+  }
+
+  @keyframes jumpInfinite {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+}

@@ -3,6 +3,12 @@ import { useState, useEffect } from "react";
 import "./NavBar.css";
 
 function NavBar() {
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setIsHamburgerOpen(!isHamburgerOpen);
+  };
+
   return (
     <>
       <nav className="navbar">
@@ -11,19 +17,30 @@ function NavBar() {
             KH
           </Link>
         </div>
-        <div className="navbarRight">
+        <div className="hamburger" onClick={toggleHamburger}>
+          ☰
+        </div>
+        <div className={`navbarRight ${isHamburgerOpen ? "active" : ""}`}>
           <ul className="navLinks">
             <li>
-              <Link to="/Hobbies">Personal Life</Link>
+              <Link to="/Hobbies" onClick={() => setIsHamburgerOpen(false)}>
+                Personal Life
+              </Link>
             </li>
             <li>
-              <Link to="/Experience">Experience</Link>
+              <Link to="/Experience" onClick={() => setIsHamburgerOpen(false)}>
+                Experience
+              </Link>
             </li>
             <li>
-              <Link to="/Resume">Resume</Link>
+              <Link to="/Resume" onClick={() => setIsHamburgerOpen(false)}>
+                Resume
+              </Link>
             </li>
             <li>
-              <Link to="/Contacts">Contacts</Link>
+              <Link to="/Contacts" onClick={() => setIsHamburgerOpen(false)}>
+                Contacts
+              </Link>
             </li>
           </ul>
         </div>
